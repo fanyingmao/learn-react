@@ -4,6 +4,7 @@
 import React from 'react';
 import {connect} from 'dva';
 import ProductList from '../components/ProductList';
+import { Button } from 'antd';
 
 const Products = ({dispatch, products}) => {
   function handleDelete(id) {
@@ -15,6 +16,7 @@ const Products = ({dispatch, products}) => {
   return (
     <div>
       <h2>List of products</h2>
+      <Button type="primary">Primary</Button>
       <ProductList onDelete={handleDelete} products={products}/>
     </div>
   );
