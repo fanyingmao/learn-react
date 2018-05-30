@@ -4,6 +4,8 @@ import IndexPage from './routes/IndexPage';
 import Products from './routes/Products';
 import Index from './routes/Index';
 import Dropdown from './routes/Dropdown';
+import Flex from './routes/Flex';
+import Layout from './routes/Layout';
 
 function RouterConfig({ history }) {
   return (
@@ -13,6 +15,8 @@ function RouterConfig({ history }) {
         <Route path="/products" exact component={Products} />
         <Route path="/index" exact component={Index} />
         <Route path="/dropdown" exact component={Dropdown} />
+        <Route path="/flex" exact component={Flex} />
+        <Route path="/layout" exact component={Layout} />
       </Switch>
     </Router>
   );
